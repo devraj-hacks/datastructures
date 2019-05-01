@@ -40,6 +40,15 @@ module LinkedList
       end
     end
 
+    def size
+      tmp = @top
+      count = 0
+      while !tmp.nil?
+        count += 1
+        tmp = tmp.link
+      end
+      count
+    end
     def is_empty?
       @top.nil?
     end
