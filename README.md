@@ -1,2 +1,2 @@
 # datastructures
-ruby data structures implementation
+data structures implementation in ruby
