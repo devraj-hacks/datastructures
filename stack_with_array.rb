@@ -12,15 +12,21 @@ class Stack
   end
 
   def pop
-    p @index
     raise "Stack underflow exception" if @index <= -1
-    @elements.delete_at(@index)
+    ele = @elements.delete_at(@index)
     @index -= 1
+    ele
   end
 
   def display
     @elements.each do |ele|
       p ele
     end
+  end
+
+  def size
+    count = 0
+    @elements.each{|i| count += 1}
+    count
   end
 end
